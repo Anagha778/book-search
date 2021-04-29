@@ -58,7 +58,7 @@ const resolvers = {
             if(context.user){
                 const updateUser = await User.findByIdAndUpdate(
                     {_id : context.user_id},
-                    {$push : {savedBooks : bookId}},
+                    {$pull : {savedBooks : bookId}},
                     {new: true}
                 );
                 
@@ -69,3 +69,5 @@ const resolvers = {
     }
 
 }
+
+module.exports = resolvers;
