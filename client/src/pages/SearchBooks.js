@@ -45,8 +45,9 @@ const SearchBooks = () => {
         bookId: book.id,
         authors: book.volumeInfo.authors || ['No author to display'],
         title: book.volumeInfo.title,
-        description: book.volumeInfo.description,
+        description: book.volumeInfo.description || 'No description to display',
         image: book.volumeInfo.imageLinks?.thumbnail || '',
+        link:book.volumeInfo.previewLink || 'No link to google book site'
       }));
 
       setSearchedBooks(bookData);
@@ -123,6 +124,7 @@ const SearchBooks = () => {
                 <Card.Body>
                   <Card.Title>{book.title}</Card.Title>
                   <p className='small'>Authors: {book.authors}</p>
+                  <a href ={book.link} target="_blank">Google book site</a>
                   <Card.Text>{book.description}</Card.Text>
                   {Auth.loggedIn() && (
                     <Button
