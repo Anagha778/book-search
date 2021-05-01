@@ -57,19 +57,19 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 #### Search for book
 
 <div>
-    <img src="./images/1.gif" width="400px"/> 
+    <img src="./images/1.gif" width="500px"/> 
 </div>
 
 #### Save searched book
 
 <div>
-    <img src="./images/2.gif" width="400px"/> 
+    <img src="./images/2.gif" width="500px"/> 
 </div>
 
 #### Delete book
 
 <div>
-    <img src="./images/3.gif" width="400px"/> 
+    <img src="./images/3.gif" width="500px"/> 
 </div>
 
 ## Built With
