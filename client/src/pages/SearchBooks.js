@@ -47,7 +47,7 @@ const SearchBooks = () => {
         title: book.volumeInfo.title,
         description: book.volumeInfo.description || 'No description to display',
         image: book.volumeInfo.imageLinks?.thumbnail || '',
-        link:book.volumeInfo.previewLink || 'No link to google book site'
+        link:book.volumeInfo.infoLink || 'No link to google book site'
       }));
 
       setSearchedBooks(bookData);
